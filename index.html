@@ -1,87 +1,184 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+
   <title>Frontend Mentor | Clipboard landing page</title>
 
+
+  <!-- BOOTSTRAP -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+  <!-- FONTAWESOME -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="./static/css/style.css">
+
+
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
+  <!-- <style>
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  </style> -->
+
 </head>
-<body>
 
-  A history of everything you copy
+<body class="">
+  <!-- BANNER -->
+  <section class="banner mb-5">
+    <img class="my-5" src="./static/images/logo.svg" alt="Logo">
+    <div class="col-lg-6 m-auto">
+      <h1 class="">A history of everything you copy</h1>
+      <p>Clipboard allows you to track and organize everything you
+        copy. Instantly access your clipboard on all your devices.</p>
+      <div class="buttons">
+        <a class="btn" href="https://www.linkedin.com/in/shelcy-calderon-6a7177202/">Download for iOS</a>
+        <a class="btn" href="https://www.linkedin.com/in/shelcy-calderon-6a7177202/">Download for Mac</a>
+      </div>
+    </div>
+  </section>
+  <!-- END BANNER -->
 
-  Clipboard allows you to track and organize everything you 
-  copy. Instantly access your clipboard on all your devices.
 
-  Download for iOS
-  Download for Mac
+  <!-- SNIPPETS -->
+  <section class="snippets my-5">
+    <div class="col-lg-5 | mb-5 m-auto">
+      <h2>Keep track of your snippets</h2>
+      <p> Clipboard instantly stores any item you copy in the cloud,
+        meaning you can access your snippets immediately on all your
+        devices. Our Mac and iOS apps will help you organize everything.</p>
+    </div>
 
-  Keep track of your snippets
+    <div class="d-flex pt-3">
+      <div class="col-lg-6">
+        <img class="w-100" src="./static/images/image-computer.png" alt="Computador">
+      </div>
+      <div class="col-lg-6 text-start | ps-5 ">
+        <div class="col-lg-6 mt-5">
+          <h3 class="h5 fw-bold">Quick Search</h3>
+          <p>Easily search your snippets by content, category, web address, application, and more.</p>
+        </div>
+        <div class="col-lg-6 mt-5">
+          <h3 class="h5 fw-bold">iCloud Sync</h3>
+          <p>Instantly saves and syncs snippets across all your devices.</p>
+        </div>
+        <div class="col-lg-6 mt-5">
+          <h3 class="h5 fw-bold"> Complete History</h3>
+          <p> Retrieve any snippets from the first moment you started using the app.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- END SNIPPETS -->
 
-  Clipboard instantly stores any item you copy in the cloud, 
-  meaning you can access your snippets immediately on all your 
-  devices. Our Mac and iOS apps will help you organize everything.
 
-  Quick Search
+  <!-- CLIPBOARD -->
+  <section class="clipboard my-5">
+    <div class="col-lg-5 | py-5 mx-auto">
+      <h2>Access Clipboard anywhere</h2>
+      <p>Whether you’re on the go, or at your computer, you can access all your Clipboard
+        snippets in a few simple clicks.</p>
+    </div>
+    <img class="my-4" src="./static/images/image-devices.png" alt="Tableta y celular">
+  </section>
+  <!-- END CLIPBOARD -->
 
-  Easily search your snippets by content, category, web address, application, and more.
 
-  iCloud Sync
+  <!-- WORKFLOW -->
+  <section class="workflow my-5">
+    <div class="col-lg-5 | mx-auto">
+      <h2>Supercharge your workflow</h2>
+      <p>We’ve got the tools to boost your productivity.</p>
+    </div>
+    <div class="d-flex container m-auto">
+      <div class="col-lg-4">
+        <img class="my-5" src="./static/images/icon-blacklist.svg" alt="Lista Negra">
+        <h3>Create blacklists</h3>
+        <p>Ensure sensitive information never makes its way to your clipboard by excluding certain sources.</p>
+      </div>
+      <div class="col-lg-4">
+        <img class="my-5" src="./static/images/icon-text.svg" alt="Texto">
+        <h3>Plain text snippets</h3>
+        <p>Remove unwanted formatting from copied text for a consistent look.</p>
+      </div>
+      <div class="col-lg-4">
+        <img class="my-5" src="./static/images/icon-preview.svg" alt="Vista">
+        <h3>Sneak preview</h3>
+        <p>Quick preview of all snippets on your Clipboard for easy access.</p>
+      </div>
+    </div>
+  </section>
+  <!-- END WORKFLOW -->
 
-  Instantly saves and syncs snippets across all your devices.
 
-  Complete History
+  <!-- LOGOS -->
+  <section class="logos container my-5">
+    <div class="d-flex justify-content-around">
+      <img class="my-5" src="./static/images/logo-google.png" alt="Google">
+      <img class="my-5" src="./static/images/logo-hp.png" alt="hp">
+      <img class="my-5" src="./static/images/logo-ibm.png" alt="IBM">
+      <img class="my-5" src="./static/images/logo-microsoft.png" alt="Microsoft">
+      <img class="my-5" src="./static/images/logo-vector-graphics.png" alt="Vector Graphics">
+    </div>
+  </section>
+  <!-- END LOGOS -->
 
-  Retrieve any snippets from the first moment you started using the app.
 
-  Access Clipboard anywhere
+  <!-- CLIPBOARD 2-->
+  <section class="workflow my-5">
+    <div class="col-lg-5 | mx-auto">
+      <h2>Clipboard for iOS and Mac OS</h2>
+      <p>Available for free on the App Store. Download for Mac or iOS, sync with iCloud
+        and you’re ready to start adding to your clipboard.</p>
+      <div class="buttons">
+        <a class="btn" href="https://www.linkedin.com/in/shelcy-calderon-6a7177202/">Download for iOS</a>
+        <a class="btn" href="https://www.linkedin.com/in/shelcy-calderon-6a7177202/">Download for Mac</a>
+      </div>
+    </div>
+  </section>
+  <!-- END CLIPBOARD -->
 
-  Whether you’re on the go, or at your computer, you can access all your Clipboard 
-  snippets in a few simple clicks.
 
-  Supercharge your workflow
-
-  We’ve got the tools to boost your productivity.
-
-  Create blacklists
-
-  Ensure sensitive information never makes its way to your clipboard by excluding certain sources.
-
-  Plain text snippets
-
-  Remove unwanted formatting from copied text for a consistent look.
-
-  Sneak preview
-
-  Quick preview of all snippets on your Clipboard for easy access.
-
-  Clipboard for iOS and Mac OS
-
-  Available for free on the App Store. Download for Mac or iOS, sync with iCloud 
-  and you’re ready to start adding to your clipboard.
-
-  Download for iOS
-  Download for Mac
-
-  FAQs
-  Contact Us
-  Privacy Policy
-  Press Kit
-  Install Guide
-  
-  <footer>
-    <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
+  <!-- FOOTER -->
+  <footer class="footer text-start">
+    <div class="d-flex justify-content-around align-items-center py-4">
+      <img class="logo" src="./static/images/logo.svg" alt="Logo Footer">
+      <div class="row row-cols-3">
+        <a class="py-1" href="https://www.linkedin.com/in/shelcy-calderon-6a7177202/">FAQs</a>
+        <a class="py-1" href="https://www.linkedin.com/in/shelcy-calderon-6a7177202/">Privacy Policy</a>
+        <a class="py-1" href="https://www.linkedin.com/in/shelcy-calderon-6a7177202/">Install Guide</a>
+        <a class="py-1" href="https://www.linkedin.com/in/shelcy-calderon-6a7177202/">Contact Us</a>
+        <a class="py-1" href="https://www.linkedin.com/in/shelcy-calderon-6a7177202/">Press Kit</a>
+      </div>
+      <div>
+        <a class="mx-1" href="https://www.linkedin.com/in/shelcy-calderon-6a7177202/"><i class="fab fa-facebook-square"></i></a>
+        <a class="mx-1" href="https://www.linkedin.com/in/shelcy-calderon-6a7177202/"><i class="fab fa-twitter"></i></a>
+        <a class="mx-1" href="https://www.linkedin.com/in/shelcy-calderon-6a7177202/"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+    <p class="attribution m-0">
+      Challenge by <a href="https://www.frontendmentor.io/profile/Shelcy" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="https://www.linkedin.com/in/shelcy-calderon-6a7177202/">Shelcy Calderón </a>.
     </p>
   </footer>
+  <!-- END FOOTER -->
+
+
+  <!-- <footer>
+    <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="#">Your Name Here</a>.
+    </p>
+  </footer> -->
 </body>
+
 </html>

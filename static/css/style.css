@@ -1,0 +1,105 @@
+:root{
+    --cyan: hsl(171, 66%, 44%);
+    --blue: hsl(233, 100%, 69%);
+    --dark-grayish-blue: hsl(210, 10%, 33%);
+    --grayish-blue: hsl(201, 11%, 66%);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap'); 
+/* font-family: 'Bai Jamjuree', sans-serif; */
+
+body{
+    /* font-size: 18px;  */
+    color: var(--grayish-blue);
+    text-align: center;
+    font-family: 'Bai Jamjuree', sans-serif;
+}
+
+h1, h2, h3, h4, h5{
+    color: var(--dark-grayish-blue);
+    font-weight: 600;
+}
+
+p{
+    line-height: 2rem;
+}
+
+/* BANNER */
+.banner{
+    background: url(../images/bg-header-desktop.png) no-repeat;
+    background-size: 100%;    
+}
+
+.buttons a:nth-child(1){
+    background-color: var(--cyan);
+}
+
+.buttons a:nth-child(2){
+    background-color: var(--blue);
+}
+
+.btn{
+    color: white;
+    border-radius: 50px;
+    padding: .6rem 2rem;
+    margin: .5rem ;
+}
+
+.btn:hover{
+    color: white;
+}
+
+.buttons a:nth-child(1):hover{
+    box-shadow: 0px 2px 9px var(--cyan);
+}
+
+.buttons a:nth-child(2):hover{
+    box-shadow: 0px 2px 9px var(--blue);
+}
+
+/* FIRST SECTION */
+.snippets img{
+    position: relative;
+    right: 4%;
+}
+
+/* WORKFLOW */
+.workflow div:nth-child(2) div{
+    padding: 0 3rem;
+    line-height: 2rem;
+} 
+
+/* LOGOS */
+.logos img{
+    height: 40px;
+}
+
+.footer{
+    background-color: hsla(201, 11%, 66%, 0.1);
+}
+
+.footer img[class="logo"]{
+    width: 45px;
+}
+
+.footer a{
+    text-decoration: none;
+    color: var(--dark-grayish-blue);
+}
+
+.footer a i{
+    font-size: 29px;
+}
+
+.footer a:hover, .attribution a{ 
+    color: var(--cyan);
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    color: white;
+    background-color: var(--dark-grayish-blue);
+}
+
+

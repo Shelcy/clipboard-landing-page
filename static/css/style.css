@@ -63,9 +63,9 @@ p {
 
 /* SNIPPETS */
 .snippets img {
-  width: 90%;
+  width: 100%;
   position: relative;
-  left: -9%;
+  left: -11%;
 }
 
 /* CLIPBOARD */
